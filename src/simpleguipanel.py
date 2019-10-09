@@ -14,7 +14,7 @@ class SimpleGuiPanel(wx.Panel):
 
     def _initUi(self):
         sizer = wx.BoxSizer(wx.VERTICAL)
-        self.text = wx.TextCtrl(self, style = wx.TE_PROCESS_ENTER, size=(WINDOW_SIZE/2,WINDOW_SIZE))
+        self.text = wx.TextCtrl(self, style = wx.TE_PROCESS_ENTER|wx.TE_MULTILINE, size=(WINDOW_SIZE/2,WINDOW_SIZE))
         self.text.SetValue("")
         sizer.Add(self.text, 1, wx.EXPAND)
         

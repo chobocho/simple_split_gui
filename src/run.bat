@@ -1,0 +1,2 @@
+python simplegui.py
+pause
